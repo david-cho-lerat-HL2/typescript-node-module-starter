@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "pretty": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["es2015"],
+    "declaration": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}

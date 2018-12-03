@@ -1,0 +1,52 @@
+{
+  "name": "typescript-node-module-starter",
+  "version": "0.0.0",
+  "description": "SStarter template for TypeScript Node.js module",
+  "keywords": [
+    "typescript",
+    "node",
+    "module",
+    "template",
+    "starter"
+  ],
+  "author": "kevinpollet <pollet.kevin@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kevinpollet/typescript-node-module-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinpollet/typescript-node-module-starter.git"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "format": "prettier --write 'src/**/*.ts' '*.{md,json}'",
+    "lint": "tslint -p tsconfig.json",
+    "prebuild": "run-s clean lint"
+  },
+  "devDependencies": {
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.15.3",
+    "rimraf": "2.6.2",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.2.1"
+  },
+  "prettier": {
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
