@@ -23,14 +23,20 @@
     "build": "tsc",
     "format": "prettier --write 'src/**/*.ts' '*.{md,json}'",
     "lint": "tslint -p tsconfig.json",
+    "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
     "prebuild": "run-s clean lint"
   },
   "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.5",
+    "chai": "4.2.0",
     "husky": "1.2.0",
     "lint-staged": "8.1.0",
+    "mocha": "5.2.0",
     "npm-run-all": "4.1.5",
     "prettier": "1.15.3",
     "rimraf": "2.6.2",
+    "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.17.0",
     "typescript": "3.2.1"

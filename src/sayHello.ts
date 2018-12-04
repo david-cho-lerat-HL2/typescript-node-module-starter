@@ -21,4 +21,4 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export const helloWorld = (name: string) => `👋 Hello ${name}!`;
+export const sayHello = (name: string) => `👋 Hello ${name}!`;

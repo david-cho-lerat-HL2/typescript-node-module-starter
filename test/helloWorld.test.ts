@@ -21,4 +21,13 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export { sayHello } from "./sayHello";
+import { expect } from "chai";
+import { sayHello } from "../src/sayHello";
+
+describe("sayHello", () => {
+  it("should say hello to given name", () => {
+    const greeting = sayHello("John Doe");
+
+    expect(greeting).to.be.eql("👋 Hello John Doe!");
+  });
+});
