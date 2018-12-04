@@ -1,7 +1,7 @@
 {
   "name": "typescript-node-module-starter",
   "version": "0.0.0",
-  "description": "Starter template to write a Node.js module in TypeScript",
+  "description": "Starter template to write Node.js modules with TypeScript",
   "keywords": [
     "typescript",
     "node",
