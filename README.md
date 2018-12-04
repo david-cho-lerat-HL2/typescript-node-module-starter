@@ -2,7 +2,7 @@
 
 ## Scripts
 
-- `clean`: removes generated files and folders
+- `clean`: remove generated files and folders
 - `lint:src`: run lint tool on source files
 - `lint:test`: run lint tool on test files
 - `build`: compile source files
