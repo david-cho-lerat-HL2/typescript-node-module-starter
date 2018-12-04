@@ -2,6 +2,15 @@
 
 This template tries to apply the best practices of Node.js module development in TypeScript.
 
+## Scripts
+
+- `clean`: removes generated files and folders
+- `lint:src`: run lint tool on source files
+- `lint:test`: run lint tool on test files
+- `build`: compile source files
+- `format`: format all files
+- `test`: run tests
+
 ## Contributing
 
 Contributions are welcome 👍
