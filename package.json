@@ -20,11 +20,13 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib",
+    "lint:src": "tslint -p tsconfig.json",
+    "lint:test": "tslint -p test/tsconfig.json",
     "build": "tsc",
     "format": "prettier --write 'src/**/*.ts' '*.{md,json}'",
-    "lint": "tslint -p tsconfig.json",
     "test": "mocha -r ts-node/register 'test/**/*.test.ts'",
-    "prebuild": "run-s clean lint"
+    "prebuild": "run-s clean lint:src",
+    "pretest": "run-s build lint:test"
   },
   "devDependencies": {
     "@types/chai": "4.1.7",
