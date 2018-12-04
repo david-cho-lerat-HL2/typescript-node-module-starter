@@ -1,5 +1,7 @@
 src/
 test/
+coverage/
+.nyc_output/
 .editorconfig
 .nvmrc
 .travis.yml

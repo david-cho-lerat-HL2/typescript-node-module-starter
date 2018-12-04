@@ -1,6 +1,8 @@
 .DS_Store
 .vscode/
+.nyc_output/
 node_modules/
 lib/
+coverage/
 *.log
 *.tgz
